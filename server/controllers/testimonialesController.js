@@ -32,7 +32,7 @@ exports.crearTestimonial = async (req, res) =>{
             testimoniales
         })
     } else{
-        Testimonial.create({
+       const testimonial = await Testimonial.create({
             name,
             email,
             message
